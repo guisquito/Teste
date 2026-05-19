@@ -1,0 +1,12 @@
+{
+  "appId": "br.com.dashboardtributario.app",
+  "appName": "Dashboard Tributário",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "ios": {
+    "backgroundColor": "#07090d",
+    "contentInset": "always"
+  }
+}

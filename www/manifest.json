@@ -1,0 +1,22 @@
+{
+  "name": "Dashboard Tributário",
+  "short_name": "Dashboard",
+  "description": "Dashboard tributário para importação e e-commerce — 3 empresas SC/SP",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#07090d",
+  "theme_color": "#07090d",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
