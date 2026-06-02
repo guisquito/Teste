@@ -87,6 +87,43 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .mb-l{color:var(--dim)}.mb-v{font-family:'IBM Plex Mono',monospace;color:var(--or)}
 .chart-box{background:var(--s2);border:1px solid var(--brd);border-radius:8px;padding:14px;margin-bottom:16px}
 .chart-wrap{position:relative;width:100%;height:240px}
+/* ── SAFE-AREA iPhone notch / home indicator ─────── */
+body{padding-bottom:env(safe-area-inset-bottom,0px);-webkit-text-size-adjust:100%}
+.hdr{padding-top:max(16px,env(safe-area-inset-top,0px))}
+/* ── ABAS: scroll suave sem scrollbar visível ──── */
+.tabs{-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+/* ── MOBILE ──────────────────────────────────────── */
+@media(max-width:640px){
+  .hdr{padding:max(10px,env(safe-area-inset-top,0px)) 12px 10px}
+  .hdr h1{font-size:14px}
+  .hdr .sub{display:none}
+  .badges{margin-top:4px}
+  .badge{font-size:9px;padding:2px 6px}
+  .tabs{padding:0 4px}
+  .tab{padding:13px 10px;font-size:11px}
+  .content{padding:12px 10px}
+  .inp-box{position:relative!important;top:0!important}
+  .field input,.field select{font-size:16px}
+  .field label{font-size:12px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .card{padding:10px}
+  .card .val{font-size:17px}
+  .res-box{padding:12px}
+  .rrow{font-size:11.5px}
+  .rl{max-width:60%}
+  .rv{font-size:12px;text-align:right}
+  .sec{font-size:9px;margin:14px 0 8px}
+  .chart-wrap{height:190px}
+  .alert{font-size:11.5px;padding:10px 12px}
+  .big-num{padding:10px}
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  th,td{padding:5px 7px;font-size:11px}
+  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns: 1fr 1fr"]{grid-template-columns:1fr!important}
+  .fase-btn{font-size:10px;padding:7px 4px}
+  .ncm-btn{font-size:11px}
+}
 </style>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
